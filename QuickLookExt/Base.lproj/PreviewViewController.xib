@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <plugIn identifier="com.apple.pdfkit.ibplugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreviewViewController" customModule="QuickLookExt" customModuleProvider="target">
+            <connections>
+                <outlet property="pdfView" destination="fz9-8c-YS9" id="hsG-ve-J0h"/>
+                <outlet property="view" destination="c22-O7-iKe" id="NRM-P4-wb6"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="c22-O7-iKe" userLabel="Preview View">
+            <rect key="frame" x="0.0" y="0.0" width="609" height="349"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <pdfView autoresizesSubviews="NO" wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fz9-8c-YS9">
+                    <rect key="frame" x="0.0" y="0.0" width="609" height="349"/>
+                </pdfView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="fz9-8c-YS9" secondAttribute="trailing" id="43g-zU-X2i"/>
+                <constraint firstAttribute="bottom" secondItem="fz9-8c-YS9" secondAttribute="bottom" id="9Vm-FW-g1b"/>
+                <constraint firstItem="fz9-8c-YS9" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="leX-lY-yZg"/>
+                <constraint firstItem="fz9-8c-YS9" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="zbS-BK-7tv"/>
+            </constraints>
+            <point key="canvasLocation" x="74.5" y="187.5"/>
+        </customView>
+    </objects>
+</document>
